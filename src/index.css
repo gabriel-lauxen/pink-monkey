@@ -1,13 +1,117 @@
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
 body {
+  width: 100vw;
+  background-color: #FBEAD0;
+  background-image: 
+  url('./assets/flowerTexture.svg');
+  background-repeat: repeat;
+  background-position: -25px 0;
+  background-size: 3vw;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Inter, sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@grid: 1 / 100% 240px;
+
+
+
+@media (min-width: 600px) {
+  .section1 {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  .buy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .section1 img {
+    translate: 0 10vh;
+    max-width: 70%;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
 }
+@media (max-width: 600px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 10%;
+    gap: 4rem;
+    color: #fbead0;
+  }
+  .buy-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .section1 img {
+    max-width: 85%;
+    margin: 20px;
+  }
+  
+  .content {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+}
+
+.section1 {
+  background-color: #AC7E46;
+  padding-inline: 10%;
+  gap: 4rem;
+  color: #fbead0;
+}
+
+
+
+h1 {
+  font-family: "Bookman Old Style", Georgia, serif; 
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+button {
+  background-color: #FBEAD0;
+  border: none;
+  border-radius: 50px;
+  font-size:1.5em;
+  color: #AC7E46;
+  padding-inline: 1em;
+  margin: 20px
+}
+
+button:active {
+  box-shadow: inset 0 0 5px #AC7E46;
+  translate: 1px 1px;
+}
+button:hover  {
+  border: 1px solid gray
+}
+
+
