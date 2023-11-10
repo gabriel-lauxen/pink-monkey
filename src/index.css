@@ -38,11 +38,16 @@ body {
   }
   .section1 img {
     translate: 0 10vh;
-    max-width: 70%;
+    max-height: 80vh;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 0.8em;
+    margin-bottom: 15px
   }
 
 }
@@ -54,6 +59,7 @@ body {
     padding-inline: 10%;
     gap: 4rem;
     color: #fbead0;
+    padding-block: 20px;
   }
   .buy-wrapper {
     display: flex;
@@ -64,6 +70,7 @@ body {
   .section1 img {
     max-width: 85%;
     margin: 20px;
+    box-shadow: 15px 0px 20px -5px black
   }
   
   .content {
@@ -74,6 +81,11 @@ body {
   
   h1 {
     font-size: 2em;
+  }
+
+  ul {
+    text-align: center;
+    margin-top: 15px;
   }
 
 }
@@ -96,7 +108,7 @@ p {
   font-family: 'Inter', sans-serif;
 }
 
-button {
+a {
   background-color: #FBEAD0;
   border: none;
   border-radius: 50px;
@@ -106,11 +118,11 @@ button {
   margin: 20px
 }
 
-button:active {
+a:active {
   box-shadow: inset 0 0 5px #AC7E46;
   translate: 1px 1px;
 }
-button:hover  {
+a:hover  {
   border: 1px solid gray
 }
 

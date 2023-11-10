@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useState } from 'react';
-import BookImg from "./assets/livroVelasAromaticas.svg";
+import BookImg from "./assets/livroVelasAromaticas.png";
 
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
         <div className="content">
           <h1>Já pensou em criar seu próprio aroma?</h1>
           {isMobile?<img src={BookImg} alt="book"  className="book"/> : null}
-          {isMobile ? <button>Comprar agora</button> : null }
+          {isMobile ? <a>Comprar agora</a> : null }
           <p>
             Este não é apenas um guia, é minha maneira de compartilhar todo o
             conhecimento que acumulei.
@@ -50,7 +50,7 @@ function App() {
               <li>Explorar</li>
               <li>Empreender</li>
             </ul>
-            {isMobile ? null : <button>Comprar agora</button> }
+            {isMobile ? null : <a>Comprar agora</a> }
           </div>
         </div>
       </section>
