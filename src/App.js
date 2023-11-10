@@ -29,7 +29,7 @@ function App() {
         <div className="content">
           <h1>Já pensou em criar seu próprio aroma?</h1>
           {isMobile?<img src={BookImg} alt="book"  className="book"/> : null}
-          {isMobile ? <a>Comprar agora</a> : null }
+          {isMobile ? <a href="https://www.instagram.com/velaspinkmonkey/">Comprar agora</a> : null }
           <p>
             Este não é apenas um guia, é minha maneira de compartilhar todo o
             conhecimento que acumulei.
@@ -50,7 +50,7 @@ function App() {
               <li>Explorar</li>
               <li>Empreender</li>
             </ul>
-            {isMobile ? null : <a>Comprar agora</a> }
+            {isMobile ? null : <a href="https://www.instagram.com/velaspinkmonkey/">Comprar agora</a> }
           </div>
         </div>
       </section>
