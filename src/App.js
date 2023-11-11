@@ -5,12 +5,12 @@ import BookImg from "./assets/livroVelasAromaticas.png";
 
 function App() {
 
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 600);
-      console.log(window.innerWidth < 600)
+      setIsMobile(window.innerWidth < 768);
+      console.log(window.innerWidth < 768)
     };
 
     window.addEventListener('resize', handleResize);
@@ -29,7 +29,7 @@ function App() {
         <div className="content">
           <h1>Já pensou em criar seu próprio aroma?</h1>
           {isMobile?<img src={BookImg} alt="book"  className="book"/> : null}
-          {isMobile ? <a href="https://www.instagram.com/velaspinkmonkey/">Comprar agora</a> : null }
+          {isMobile ? <a href="https://pay.hotmart.com/U88277179J">Comprar agora</a> : null }
           <p>
             Este não é apenas um guia, é minha maneira de compartilhar todo o
             conhecimento que acumulei.
@@ -43,17 +43,18 @@ function App() {
             pronto para criar suas próprias velas aromáticas, e tornar a sua
             realidade, ou a dos seus futuros clientes, muito mais cheirosa!
           </p>
-          <p>Adquira esse eBook para:</p>
           <div className="buy-wrapper">
+            <p>Adquira esse eBook para:</p>
             <ul>
-              <li>Aprender</li>
-              <li>Explorar</li>
-              <li>Empreender</li>
+              <li><span className="check">&#x2713;</span>Aprender</li>
+              <li><span className="check">&#x2713;</span>Explorar</li>
+              <li><span className="check">&#x2713;</span>Empreender</li>
             </ul>
-            {isMobile ? null : <a href="https://www.instagram.com/velaspinkmonkey/">Comprar agora</a> }
           </div>
+          <a href="https://pay.hotmart.com/U88277179J">Comprar agora</a> 
         </div>
       </section>
+      <div className="bottomFlower"></div>
     </div>
   );
 }
