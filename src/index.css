@@ -83,7 +83,7 @@ body {
   .buy-wrapper ul {
     text-align: left;
     font-size: 1.5rem;
-    margin-inline: 20vw;
+    margin-inline: auto;
     gap: 1rem;
     justify-content: center;
     display: flex;
@@ -102,6 +102,7 @@ body {
   }
   .content {
     display:flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
   }
@@ -124,7 +125,9 @@ body {
     padding-inline: 1em;
     padding-block: 0.5em;
     font-size:1.5em;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
   }
   .bottomFlower {
     background-image: 
