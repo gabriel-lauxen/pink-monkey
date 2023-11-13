@@ -30,7 +30,6 @@ function App() {
       const screenPosition = window.innerHeight;
       const fadeInText2 = fadeInTextRef2.current;
       const contentPosition2 = fadeInText2.getBoundingClientRect().top;
-      const screenPosition2 = window.innerHeight;
 
       if (contentPosition < screenPosition) {
         fadeInText.style.opacity = 1;
