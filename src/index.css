@@ -127,7 +127,7 @@ body {
     font-size:1.5em;
     margin-bottom: 10px;
     position: sticky;
-    top: 0;
+    top: 15px;
   }
   .bottomFlower {
     background-image: 
@@ -187,5 +187,7 @@ li {
   font-weight: 700
 }
 
-
-
+.fadeintext {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
