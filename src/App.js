@@ -39,6 +39,14 @@ function App() {
         fadeInText2.style.opacity = 1;
       }
     };
+    if (!isMobile) {
+      setTimeout(() => {
+        const fadeInText = fadeInTextRef.current;
+        const fadeInText2 = fadeInTextRef2.current;
+        fadeInText.style.opacity = 1;
+        fadeInText2.style.opacity = 1;
+      }, 200)
+    }
 
     window.addEventListener('scroll', handleScroll);
 
